@@ -1,0 +1,23 @@
+click==8.1.7
+colorama==0.4.6
+lxml==4.9.3
+mkl-fft @ file:///C:/b/abs_19i1y8ykas/croot/mkl_fft_1695058226480/work
+mkl-random @ file:///C:/b/abs_edwkj1_o69/croot/mkl_random_1695059866750/work
+mkl-service==2.4.0
+numpy @ file:///C:/Users/dev-admin/mkl/numpy_and_numpy_base_1682982345978/work
+packaging @ file:///C:/b/abs_28t5mcoltc/croot/packaging_1693575224052/work
+ply==3.11
+PyQt5==5.15.9
+pyqt5-plugins==5.15.9.2.3
+PyQt5-Qt5==5.15.2
+PyQt5-sip @ file:///C:/Windows/Temp/abs_d7gmd2jg8i/croots/recipe/pyqt-split_1659273064801/work/pyqt_sip
+pyqt5-tools==5.15.9.3.3
+python-docx==1.1.0
+python-dotenv==1.0.0
+QDarkStyle==3.1
+qt5-applications==5.15.2.2.3
+qt5-tools==5.15.2.1.3
+QtPy==2.4.0
+sip @ file:///C:/Windows/Temp/abs_b8fxd17m2u/croots/recipe/sip_1659012372737/work
+toml @ file:///tmp/build/80754af9/toml_1616166611790/work
+typing_extensions==4.8.0

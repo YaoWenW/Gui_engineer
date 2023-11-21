@@ -22,7 +22,7 @@ class MatrixCalculator(QMainWindow):
 
         # 创建左侧部分的输入框和计算按钮
         input_layout = QVBoxLayout()
-        input_label = QLabel("根据对盾构隧道防水性能影响的程度，输入评价指标的取值(单位为MPa):")
+        input_label = QLabel("根据对盾构隧道防水性能影响的程度，输入评价指标的取值(单位为MPa)\nps.若无特殊变动，按照给出的默认值直接计算即可:")
         input_layout.addWidget(input_label)
 
         scroll_area = QScrollArea()  # 创建QScrollArea用于放置输入框和标签

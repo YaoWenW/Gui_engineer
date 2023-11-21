@@ -135,7 +135,7 @@ if __name__ == '__main__':
         try:
             zhw = demo.combine2_W(win_sub.sub_w, win_obj.obj_w)
             L, level = demo.cal_L(qsm_n.matrix, zhw)
-            main_win.lable_qsm_level.setText(f"隶属度为{L},可靠性等级为{level}")
+            main_win.lable_qsm_level.setText(f"隶属度:{L},\n可靠性:{level}")
         except:
             main_win.lable_qsm_level.setText("请先完成上面的步骤！")
         return
@@ -232,7 +232,7 @@ if __name__ == '__main__':
                 f'3. 组合权重计算\n        根据博弈论法对得到的主、客观权重进行综合计算得到组合权重。以将组合权重与主、客观权重之间的离差极小化作为目标，计算得到的主观权重如表10所示。')
             # zh_w = [9.876, 8.765, 7.654, 6.543, 5.432, 4.321, 3.210, 2.109, 1.098]
             data_5 = np.array([sub[5:], obj, zhw]).T
-            hzb_5 = ['影响因素', '主观权重', '客观权重', '组合权重']
+            hzb_5 = ['主观权重', '客观权重', '组合权重']
             zzb_5 = zb_name[5:]
             create_table_with_title(doc, '表10 盾构隧道全寿命阶段防水可靠性评价指标主、客观权重值', hzb_5, zzb_5, len(data_5), len(data_5[0]),
                                     data_5)
@@ -335,7 +335,7 @@ if __name__ == '__main__':
         try:
             zhw = demo.combine2_W(sj_win_sub.sub_w, sj_win_obj.obj_w)
             L, level = demo.cal_L(sj_n.matrix, zhw)
-            main_win.lable_sj_level.setText(f"隶属度为{L},可靠性等级为{level}")
+            main_win.lable_sj_level.setText(f"隶属度:{L},\n可靠性:{level}")
         except:
             main_win.lable_sj_level.setText("请先完成上面步骤！")
         return
@@ -356,6 +356,7 @@ if __name__ == '__main__':
         for i in range(cols):
             cell = table.cell(0, i + 1)
             cell.text = hzb[i]
+            cell.paragraphs[0].alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
         # for i in range(rows+1):
         #     cell = table.cell(i, 0)
         #     cell.width = Cm(5)
@@ -370,6 +371,7 @@ if __name__ == '__main__':
                 cell = table.cell(i + 1, j + 1)
                 if i < len(data) and j < len(data[i]):
                     cell.text = str(data[i][j])
+                    cell.paragraphs[0].alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
                         # "{:.3f}".format(data[i][j])
 
         doc.add_paragraph("")
@@ -465,7 +467,7 @@ if __name__ == '__main__':
             doc.add_paragraph().add_run(f'3. 组合权重计算\n        根据博弈论法对得到的主、客观权重进行综合计算得到组合权重。以将组合权重与主、客观权重之间的离差极小化作为目标，计算得到的组合权重如表8所示。')
             # zh_w = [9.876, 8.765, 7.654, 6.543, 5.432, 4.321, 3.210, 2.109, 1.098]
             data_5 = np.array([sub[3:], obj, zhw]).T
-            hzb_5 = ['影响因素','主观权重','客观权重', '组合权重']
+            hzb_5 = ['主观权重','客观权重', '组合权重']
             zzb_5 = zb_name[3:]
             create_table_with_title(doc, '表8 盾构隧道设计阶段防水可靠性评价指标主、客观权重值', hzb_5, zzb_5, len(data_5), len(data_5[0]), data_5)
 

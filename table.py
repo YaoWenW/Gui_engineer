@@ -14,10 +14,12 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Dialog(object):
     def setupUi(self, Dialog):
         Dialog.setObjectName("Dialog")
-        Dialog.resize(699, 534)
+        Dialog.resize(765, 615)
+        Dialog.setMinimumSize(QtCore.QSize(765, 615))
+        Dialog.setMaximumSize(QtCore.QSize(765, 615))
         self.textBrowser = QtWidgets.QTextBrowser(Dialog)
-        self.textBrowser.setGeometry(QtCore.QRect(9, 9, 681, 521))
-        self.textBrowser.setStyleSheet("border-image: url(:/ficture/table.png);")
+        self.textBrowser.setGeometry(QtCore.QRect(9, 9, 741, 591))
+        self.textBrowser.setStyleSheet("border-image: url(:/ficture/img_21.png);")
         self.textBrowser.setObjectName("textBrowser")
 
         self.retranslateUi(Dialog)

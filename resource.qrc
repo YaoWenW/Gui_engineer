@@ -1,7 +1,7 @@
 <RCC>
   <qresource prefix="ficture">
+    <file>img_21.png</file>
     <file>table.png</file>
     <file>img_3.png</file>
-    <file>img_2.png</file>
   </qresource>
 </RCC>

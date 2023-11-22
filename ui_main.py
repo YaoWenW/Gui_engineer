@@ -49,7 +49,7 @@ class table_Ui(QMainWindow, table.Ui_Dialog):
 
 
 if __name__ == '__main__':
-    QtCore.QCoreApplication.setAttribute(QtCore.Qt.AA_EnableHighDpiScaling)
+    QtCore.QCoreApplication.setAttribute(QtCore.Qt.AA_EnableHighDpiScaling, True)
 
     app = QApplication(sys.argv)
     app.setStyleSheet(qdarkstyle.load_stylesheet_pyqt5())
@@ -146,9 +146,9 @@ if __name__ == '__main__':
             doc = Document()
             project = main_win.lineEdit_project.text()
             name = main_win.lineEdit_name.text()  # 负责人
-            start = main_win.dateEdit_start.text()  # 开工时间
-            end = main_win.dateEdit_end.text()  # 竣工时间
-            run = main_win.dateEdit_run.text()  # 开始运营时间
+            start = main_win.lineEdit.text()  # 开工时间
+            end = main_win.lineEdit_2.text()  # 竣工时间
+            run = main_win.lineEdit_3.text()  # 开始运营时间
 
             sub_input = win_sub.matrices  # 比较矩阵
             sub = win_sub.sub_w  # 主观权重
@@ -382,9 +382,9 @@ if __name__ == '__main__':
             doc = Document()
             project = main_win.lineEdit_project.text()
             name = main_win.lineEdit_name.text()  # 负责人
-            start = main_win.dateEdit_start.text()  # 开工时间
-            end = main_win.dateEdit_end.text()  # 竣工时间
-            run = main_win.dateEdit_run.text()  # 开始运营时间
+            start = main_win.lineEdit.text()  # 开工时间
+            end = main_win.lineEdit_2.text()  # 竣工时间
+            run = main_win.lineEdit_3.text()  # 开始运营时间
 
             sub_input = sj_win_sub.matrices  # 比较矩阵
             sub = sj_win_sub.sub_w # 主观权重
